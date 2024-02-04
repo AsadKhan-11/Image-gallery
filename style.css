@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.all {
+  background-image: linear-gradient(45deg, rgb(77, 77, 77), rgb(24, 23, 23));
+  height: 100vh;
+  overflow: hidden;
+}
+#container {
+  margin: 20px auto;
+  max-width: 550px;
+}
+
+#main-img img {
+  height: 300px;
+}
+
+#main-img img,
+#gallery img {
+  width: 100%;
+}
+
+#gallery {
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px 0;
+}
+.item-box {
+  overflow: hidden;
+}
+
+#gallery img {
+  height: 100%;
+}
+#gallery img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
